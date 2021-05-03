@@ -1,41 +1,40 @@
 body {
   font-family: sans-serif;
-  background: url(chill.jpg) no-repeat;
+  background: url(todopic.jpg) no-repeat;
   background-size: cover;
 }
 
-.box-container {
+.grid-container {
   display: grid;
   height: 100vh;
   gap: 5px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4fr 1fr;
 }
 
 .header {
   text-align: center;
-  color: #333;
+  color: orangered;
 }
 
-.todo-box{
-  padding: 20px 0px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  transition: linear 2px ease-in-out;
+.todo-container{
+
+  background: #0d1117e0;
   grid-column: 2/3;
-  grid-row:3/3;
-  box-shadow: 2px 1px rgba(51, 51, 51, 0.466);
+  grid-row: 2/3;
+  color: orangered;
+  box-shadow: 0 0 10px #0D1117;
+  
 }
 
 .todo-item-box {
   margin-top: 20px;
-  background: #fe7;
+  background: orangered;
 }
 
 .todo-item{
-  background: rgb(173, 216, 230);
-  color: #333;
+  background: #0D1117;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +46,7 @@ body {
 }
 
 .todo-item:hover{
-  color: #fe7;
+  color: white;
   margin-left: 10px;
   margin-right: 0;
   box-shadow: 0px 0px 5px 0px gray;
@@ -68,6 +67,11 @@ body {
 button{
   padding: 5px 10px;
   width: fit-content;
+  background-color:orangered;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 /* 
 @media max-width(550px) {
@@ -75,4 +79,4 @@ button{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 6fr 1fr;
   }
-} */
+} 
